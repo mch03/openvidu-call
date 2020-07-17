@@ -377,6 +377,13 @@ export class OpenViduSessionService {
 		}
 	}
 
+	disposeVideoAndAudio() {
+		this.stopAudioTracks(this.webcamUser.getStreamManager()?.stream?.getMediaStream());
+		this.stopVideoTracks(this.webcamUser.getStreamManager()?.stream?.getMediaStream());
+		this.webcamUser.setStreamManager(null);
+		this._OVUsers.next([this.webcamUser]);
+	}
+
 	private initPublisher(targetElement: string | HTMLElement, properties: PublisherProperties): Publisher {
 		return this.OV.initPublisher(targetElement, properties);
 	}

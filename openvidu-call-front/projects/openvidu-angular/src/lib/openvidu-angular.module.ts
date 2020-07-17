@@ -59,6 +59,8 @@ import { LoggerService } from './shared/services/logger/logger.service';
 import { NotificationService } from './shared/services/notifications/notification.service';
 import { StorageService } from './shared/services/storage/storage.service';
 
+import {MatRadioModule} from '@angular/material/radio';
+
 @NgModule({
 	imports: [
 		CommonModule,
@@ -82,6 +84,7 @@ import { StorageService } from './shared/services/storage/storage.service';
 		MatSidenavModule,
 		MatSnackBarModule,
 		FlexLayoutModule,
+		MatRadioModule,
 		NgxLinkifyjsModule.forRoot()
 	],
 	declarations: [

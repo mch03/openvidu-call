@@ -20,6 +20,7 @@ export class DevicesService {
 	private micSelected: IDevice;
 	private log: ILogger;
 	private videoDevicesDisabled: boolean;
+	private audioDevicesDisabled: boolean;
 
 	constructor(private loggerSrv: LoggerService, private utilSrv: UtilsService, private storageSrv: StorageService) {
 		this.log = this.loggerSrv.get('DevicesService');
@@ -155,7 +156,7 @@ export class DevicesService {
 	}
 
 	hasAudioDeviceAvailable(): boolean {
-		return !!this.devices?.find((device) => device.kind === 'audioinput');
+		return !this.audioDevicesDisabled && !!this.devices?.find((device) => device.kind === 'audioinput');
 	}
 
 	cameraNeedsMirror(deviceField: string): boolean {
@@ -168,6 +169,16 @@ export class DevicesService {
 
 	disableVideoDevices() {
 		this.videoDevicesDisabled = true;
+	}
+	enableVideoDevices() {
+		this.videoDevicesDisabled = false;
+	}
+
+	disableAudioDevices() {
+		this.audioDevicesDisabled = true;
+	}
+	enableAudioDevices() {
+		this.audioDevicesDisabled = false;
 	}
 
 	clear() {

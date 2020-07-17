@@ -211,7 +211,24 @@
         </div>
 
         <!-- Modal footer -->
-        <div class="modal-footer" style="justify-content: center">
+		<div class="modal-footer" style="justify-content: center">
+				<!-- Devices section / Nickname-->
+				<div fxLayout="row" fxFill>
+					<div fxLayout fxFlex>
+						<div class="one" fxFlex="100" fxLayoutAlign="center center">
+							<mat-radio-group >
+								<mat-radio-button value="publishAll" [checked]='true' (change)="onMediaStreamUserChanged($event.value)" style="padding: 5px">Publish audio and video</mat-radio-button>
+
+								<mat-radio-button value="publishOnlyAudio" (change)="onMediaStreamUserChanged($event.value)" style="padding: 5px">Publish only audio</mat-radio-button>
+
+								<mat-radio-button value="noPublish" (change)="onMediaStreamUserChanged($event.value)" style="padding: 5px">No publish</mat-radio-button>
+
+							  </mat-radio-group>
+						</div>
+
+					</div>
+				</div>
+
 			<button mat-flat-button color="accent" (click)="joinSession()" form="nicknameForm" id="joinButton">JOIN</button>
 
         </div>

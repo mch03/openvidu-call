@@ -56,6 +56,7 @@ export class RoomConfigComponent implements OnInit, OnDestroy {
 	hasVideoDevices: boolean;
 	hasAudioDevices: boolean;
 	showConfigCard: boolean;
+	devicesDisabled: boolean;
 	private log: ILogger;
 
 	constructor(
@@ -100,6 +101,40 @@ export class RoomConfigComponent implements OnInit, OnDestroy {
 			this.oVUsersSubscription.unsubscribe();
 		}
 		this.oVDevicesService.clear();
+	}
+
+	onMediaStreamUserChanged(event) {
+		switch (event) {
+			case 'publishAll':
+				this.oVSessionService.disposeVideoAndAudio();
+
+				this.oVDevicesService.enableVideoDevices();
+				this.oVDevicesService.enableAudioDevices();
+
+				this.setDevicesInfo();
+				this.initwebcamPublisher();
+				break;
+
+			case 'publishOnlyAudio':
+				this.oVSessionService.disposeVideoAndAudio();
+
+				this.hasVideoDevices = false;
+				this.hasAudioDevices = true;
+
+				this.oVDevicesService.enableAudioDevices();
+				this.oVDevicesService.disableVideoDevices();
+				this.initwebcamPublisher();
+
+			break;
+
+			case 'noPublish':
+				this.hasVideoDevices = false;
+				this.hasAudioDevices = false;
+				this.oVDevicesService.disableVideoDevices();
+				this.oVDevicesService.disableAudioDevices();
+				this.oVSessionService.disposeVideoAndAudio();
+				break;
+		}
 	}
 
 	async onCameraSelected(event: any) {
