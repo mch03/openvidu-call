@@ -152,7 +152,7 @@ export class VideoRoomComponent implements OnInit, OnDestroy {
 		}, 50);
 	}
 
-	joinToSession() {
+	async joinToSession() {
 		this.oVSessionService.initSessions();
 		this.session = this.oVSessionService.getWebcamSession();
 		this._session.emit(this.session);
@@ -166,7 +166,11 @@ export class VideoRoomComponent implements OnInit, OnDestroy {
 		this.chatService.subscribeToChat();
 		this.subscribeToChatComponent();
 		this.subscribeToReconnection();
-		this.connectToSession();
+		await this.connectToSession();
+		if (this.utilsSrv.isFirefox() && !this.oVSessionService.hasWebcamVideoActive()) {
+			this.oVSessionService.publishVideo(true);
+			this.oVSessionService.publishVideo(false);
+		}
 	}
 
 	leaveSession() {
