@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "\\openvidu-call-front",
+    "\\openvidu-call-front\\src\\app\\shared",
+    "\\openvidu-call-front\\src\\app\\shared\\components",
+    "\\openvidu-call-front\\src\\app\\shared\\components\\dialog-error",
+    "\\openvidu-call-front\\src\\app\\shared\\components\\footer",
+    "\\openvidu-call-front\\src\\app\\shared\\components\\room-config",
+    "\\openvidu-call-front\\src\\assets"
+  ],
+  "PreviewInSolutionExplorer": false
+}

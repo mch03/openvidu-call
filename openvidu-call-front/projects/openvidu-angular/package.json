@@ -15,9 +15,9 @@
         "@angular/common": "10.0.6",
         "@angular/core": "10.0.6"
     },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mch03/openvidu-call"
-  },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mch03/openvidu-call"
+    },
     "version": "2.15.0"
 }
