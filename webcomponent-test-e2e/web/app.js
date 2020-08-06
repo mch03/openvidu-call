@@ -103,8 +103,8 @@ async function joinSession(sessionName, user) {
  *   3) Configure OpenVidu Web Component in your client side with the token
  */
 
-var OPENVIDU_SERVER_URL = "https://localhost:4443" ;
-var OPENVIDU_SERVER_SECRET = 'MY_SECRET';
+var OPENVIDU_SERVER_URL = "https://hybrid.hyme.fi" ;
+var OPENVIDU_SERVER_SECRET = 'jWSMFuVQC6D2d483S3Jd0';
 
 function getToken(sessionName) {
     return createSession(sessionName).then((sessionId) => createToken(sessionId));
