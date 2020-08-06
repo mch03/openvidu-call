@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
+    "\\ci",
+    "\\docker",
+    "\\openvidu-call-back",
     "\\openvidu-call-front",
-    "\\openvidu-call-front\\src\\app\\shared",
-    "\\openvidu-call-front\\src\\app\\shared\\components",
-    "\\openvidu-call-front\\src\\app\\shared\\components\\dialog-error",
-    "\\openvidu-call-front\\src\\app\\shared\\components\\footer",
-    "\\openvidu-call-front\\src\\app\\shared\\components\\room-config",
-    "\\openvidu-call-front\\src\\assets"
+    "\\openvidu-call-front\\projects",
+    "\\openvidu-call-front\\projects\\openvidu-angular",
+    "\\openvidu-call-front\\src",
+    "\\openvidu-call-front\\src\\app",
+    "\\webcomponent-test-e2e",
+    "\\webcomponent-test-e2e\\web"
   ],
   "PreviewInSolutionExplorer": false
 }
