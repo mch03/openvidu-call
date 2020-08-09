@@ -1,6 +1,6 @@
 <div class="section1">
 	<mat-toolbar id="header">
-		<a href="https://openvidu.io/" target="_blank">
+		<a href="https://hybridmedia.fi/" target="_blank">
 			<img id="header_img" alt="OpenVidu Logo" src="assets/images/openvidu_logo.png" />
 		</a>
 		<div class="ovVersion">
@@ -10,19 +10,20 @@
 	<div class="container">
 		<div class="ovInfo">
 			<img class="ovLogo" alt="OpenVidu Logo" src="assets/images/openvidu_vert_white_bg_trans_cropped.png" />
-			<h4>Videoconference rooms in one click</h4>
+			<h1>Hybrid Meetings</h1>
+			<h4>Realiaikanen. Yksinkertaisesti toimiva. Paina vain Aloita.</h4>
 		</div>
 		<div class="formContainer">
 			<div class="roomError" id="requiredNameError" *ngIf="roomForm.hasError('required')">
-				Room name is <strong>required</strong>
+				Kirjoita tapaamisen nimi
 			</div>
 			<div class="roomError" id="shortNameError" *ngIf="roomForm.hasError('minlength')">
-				Room name is <strong>too short!</strong>
+				Tapaamisen nimi on liian lyhyt
 			</div>
 			<form [formGroup]="roomForm" novalidate (ngSubmit)="goToVideoCall()">
 				<div class="joinForm">
 					<input matInput class="inputForm" type="text" [formControl]="roomForm"  autocomplete="off" id="roomInput" />
-					<button type="submit" class="joinButton" id="joinButton" >JOIN</button>
+					<button type="submit" class="joinButton" id="joinButton" >ALOITA</button>
 				</div>
 			</form>
 		</div>
@@ -31,21 +32,15 @@
 
 	<mat-toolbar class="footer">
 		<span>
-			Photo by
+			Get your own hybrid meeting:
 			<a
 				rel="noopener noreferrer"
 				target="_blank"
-				href="https://unsplash.com/@danielleone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				href="https://hybridmedia.fi"
 			>
-				Daniel Leone
+				Hybrid Media Oy
 			</a>
-			on
-			<a
-				href="https://unsplash.com/s/photos/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-				target="_blank"
-			>
-				Unsplash
-			</a></span
+			</span
 		>
 	</mat-toolbar>
 </div>

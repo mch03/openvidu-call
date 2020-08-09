@@ -24,8 +24,8 @@
 						(keypress)="eventKeyPress($event)"
 						autocomplete="off"
 					/>
-					<mat-error *ngIf="nicknameFormControl.hasError('required')"> Nickname is <strong>required</strong> </mat-error>
-					<mat-error *ngIf="nicknameFormControl.hasError('maxlength')"> Nickname is <strong>too long!</strong> </mat-error>
+					<mat-error *ngIf="nicknameFormControl.hasError('required')"> Nimimerkki puuttuu</mat-error>
+					<mat-error *ngIf="nicknameFormControl.hasError('maxlength')"> Nimimerki liian pitkä </mat-error>
 				</mat-form-field>
 			</form>
 		</div>
@@ -59,7 +59,7 @@
 			id="changeScreenButton"
 			*ngIf="!this._user.streamManager?.remote && this._user.isScreen()"
 		>
-			<mat-icon matTooltip="Valitse kuvalähde">picture_in_picture</mat-icon>
+			<mat-icon smatTooltip="Valitse kuvalähde">picture_in_picture</mat-icon>
 		</button>
 	</div>
 </div>
