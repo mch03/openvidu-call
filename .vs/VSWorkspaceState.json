@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\openvidu-call-back",
     "\\openvidu-call-front",
-    "\\openvidu-call-front\\e2e",
     "\\openvidu-call-front\\src",
     "\\openvidu-call-front\\src\\app",
-    "\\openvidu-call-front\\src\\app\\shared",
-    "\\openvidu-call-front\\src\\app\\shared\\components",
-    "\\openvidu-call-front\\src\\app\\shared\\components\\stream",
+    "\\openvidu-call-front\\src\\app\\shared\\models",
+    "\\openvidu-call-front\\src\\app\\shared\\services",
+    "\\openvidu-call-front\\src\\app\\shared\\services\\logger",
+    "\\openvidu-call-front\\src\\app\\shared\\services\\openvidu-session",
+    "\\openvidu-call-front\\src\\app\\shared\\services\\remote-users",
     "\\openvidu-call-front\\src\\app\\video-room"
   ],
+  "SelectedNode": "\\openvidu-call-front\\src\\app\\video-room\\video-room.component.html",
   "PreviewInSolutionExplorer": false
 }

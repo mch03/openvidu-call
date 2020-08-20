@@ -67,6 +67,13 @@
 			<button mat-icon-button (click)="leaveSession()" id="navLeaveButton" *ngIf="ovSettings | hasExit">
 				<mat-icon color="warn" matTooltip="Poistu kokoustilasta">power_settings_new</mat-icon>
 			</button>
+
+      <button mat-icon-button  id="navWhatsApp" data-social="whatsapp">
+				<mat-icon color="warn" matTooltip="Jaa whatsApp">share</mat-icon>
+			</button>
+      
+			<a href="#" data-social="sms">SMS</a>
+
 		</div>
 	</div>
 	<div fxFlex="10%" fxFlexOrder="3" align="end">
