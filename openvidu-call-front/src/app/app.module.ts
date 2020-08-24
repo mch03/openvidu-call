@@ -24,8 +24,12 @@ import { createCustomElement } from '@angular/elements';
 import { ElementZoneStrategyFactory } from 'elements-zone-strategy';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ShareModule } from 'ngx-sharebuttons';
+import { ShareButtonsModule } from 'ngx-sharebuttons';
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
-
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 // Pipes
 import { LinkifyPipe } from './shared/pipes/linkfy';
 import {
@@ -115,6 +119,7 @@ import { StorageService } from './shared/services/storage/storage.service';
 		HttpClientModule,
 		FlexLayoutModule,
 		ShareModule,
+    ShareButtonsModule,
     ShareIconsModule
 	],
 	entryComponents: [DialogErrorComponent, WebComponentComponent],

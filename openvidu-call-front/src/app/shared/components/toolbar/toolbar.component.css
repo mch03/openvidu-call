@@ -89,3 +89,5 @@
     display: none;
   }
 }
+
+@import '~ngx-sharebuttons/themes/default/outline-theme';
