@@ -1,5 +1,8 @@
 @import '~@angular/material/theming';
 
+@import '~ngx-sharebuttons/button/themes/default/default-theme';
+
+
 // always include only once per project
 @include mat-core();
 
