@@ -69,7 +69,14 @@
 			</button>
 
 			<!-- Share buttons and copy to clipboard -->
-      <button shareButton="whatsapp"><img src="/assets/images/whatsapp_icon.png" alt="Jaa whatsapp ohjelmaan" width="10" height="10" /></button>
+			<share-buttons [theme]="'outline'"
+			 [include]="['telegram','messenger','whatsapp','sms','email','copy']"
+			 [show]="6"
+			 [size]="-4"
+			 [title]="'Videotapaaminen'"
+			 [description]="'Kutsu videotapaamiseen'"
+			 [autoSetMeta]="false"
+			></share-buttons>
       
 			
 
