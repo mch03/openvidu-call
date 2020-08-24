@@ -37,6 +37,7 @@
       "@fortawesome/free-brands-svg-icons": "5.14.0",
       "@fortawesome/free-solid-svg-icons": "5.14.0",
       "@fortawesome/angular-fontawesome": "0.7.0",
+      "@fortawesome/fontawesome-svg-core" : "1.2.30",
         "codelyzer": "6.0.0",
         "concat": "1.0.3",
         "document-register-element": "1.14.3",
