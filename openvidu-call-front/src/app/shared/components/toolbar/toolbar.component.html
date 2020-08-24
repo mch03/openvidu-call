@@ -68,11 +68,17 @@
 				<mat-icon color="warn" matTooltip="Sulje yhteys">power_settings_new</mat-icon>
 			</button>
 
-      <button mat-icon-button  id="navWhatsApp" data-social="whatsapp">
-				<mat-icon color="warn" matTooltip="Jaa whatsApp">share</mat-icon>
+			<!-- Share buttons and copy to clipboard -->
+			<button mat-icon-button  id="navKopioiurli">
+				<a href="whatsapp://send?text=
+					 <script>
+						 print(window.location.href);
+
+					 </script>
+					 "><img src="/assets/images/whatsapp_icon.png" alt="Jaa whatsapp ohjelmaan" width="60" height="60" /></a>
 			</button>
       
-			<a href="#" data-social="sms">SMS</a>
+			
 
 		</div>
 	</div>
