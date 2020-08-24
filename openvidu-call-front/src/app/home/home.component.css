@@ -4,7 +4,7 @@
   height: 100%;
   text-align: center;
   position: relative;
-  color: #fff;
+  color: #007fff;
 }
 
 #header, .footer {
@@ -51,7 +51,7 @@
 h4 {
   font-size: 25px;
   font-weight: 500;
-  color: #fff;
+  color: #007fff;
   position: relative;
   padding-bottom: 5px;
 }
@@ -103,7 +103,7 @@ h4 {
 .joinForm {
   min-width: 300px;
   margin: 10px auto;
-  max-width: 50%;
+  max-width: 36%;
   background: #fff;
   padding: 6px 10px;
   position: relative;
@@ -115,7 +115,7 @@ h4 {
   border: 0;
   padding: 4px 8px;
   font-size: 17px;
-  width: calc(100% - 90px);
+  width: calc(90% - 90px);
   outline: none;
   caret-color: #000000;
   color: #303030;
