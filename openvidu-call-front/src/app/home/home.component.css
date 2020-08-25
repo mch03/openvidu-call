@@ -1,10 +1,12 @@
 .section1 {
-  background: url('./../../assets/images/bg.jpg')  top center no-repeat;
+  background: url('./../../assets/images/bg-header2016.png')  bottom center repeat-x;
   background-size: cover;
+  background-color: #b20838;
+
   height: 100%;
   text-align: center;
   position: relative;
-  color: #007fff;
+  color: #696969;
 }
 
 #header, .footer {
@@ -51,7 +53,7 @@
 h4 {
   font-size: 25px;
   font-weight: 500;
-  color: #007fff;
+  color: #fff;
   position: relative;
   padding-bottom: 5px;
 }
