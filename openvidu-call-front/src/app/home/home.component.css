@@ -1,7 +1,7 @@
 .section1 {
-  background: url('./../../assets/images/bg_header2016.png')  bottom center no-repeat;
+  background: url('./../../assets/images/bg_header2016.png')  bottom center repeat-x;
   background-size: cover;
-  background-color: #b20838;
+  background-color: #BA214C;
 
   height: 100%;
   text-align: center;
