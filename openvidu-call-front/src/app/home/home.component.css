@@ -6,7 +6,7 @@
   height: 100%;
   text-align: center;
   position: relative;
-  color: #696969;
+  color: #FFFFFF;
 }
 
 #header, .footer {
@@ -150,19 +150,21 @@ h4 {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .ovLogo {
-    max-width: 75%;
+    max-width: 300px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  .ovLogo {
+    max-width: 300px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .ovLogo {
-    max-width: 60%;
+    max-width: 380px;
   }
   .inputForm {
     font-size: 20px !important;
@@ -175,6 +177,6 @@ h4 {
     background-attachment: fixed;
   }
   .ovLogo {
-    max-width: 50%;
+    max-width:460px;
   }
 }
