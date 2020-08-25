@@ -3,7 +3,7 @@ import { FormBuilder, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 // import { uniqueNamesGenerator, adjectives, colors, animals } from 'unique-names-generator';
 
-import { uniqueNamesGenerator, NumberDictionary } from 'unique-names-generator';
+import { uniqueNamesGenerator, NumberDictionary, colors } from 'unique-names-generator';
  
 const KattoTeema = [
   'Pelti',
