@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
 
 	ngOnInit() {
     const numberDictionary = NumberDictionary.generate({ min: 100, max: 999 });
-		const randomName = uniqueNamesGenerator({ dictionaries: [colors, DesiTeema, numberDictionary], length: 3, separator: '-', style: 'capital' });
+		const randomName = uniqueNamesGenerator({ dictionaries: [colors, animals, numberDictionary], length: 3, separator: '-', style: 'capital' });
 		this.roomForm = new FormControl(randomName, [Validators.minLength(3), Validators.required]);
 	}
 
