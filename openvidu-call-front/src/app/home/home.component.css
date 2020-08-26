@@ -1,8 +1,10 @@
 .section1 {
-  background: url('./../../assets/images/bg_header2016.png')  bottom center repeat-x;
-  background-size: auto;
-  background-color: #BA214C;
-
+  background-size: initial;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-blend-mode: overlay;
+  background-color: initial;
+  background-image: url('./../../assets/images/bg_header2016.png'),linear-gradient(180deg,rgb(202 0 41) 0%,rgb(239 24 0 / 35%) 90%);
   height: 100%;
   text-align: center;
   position: relative;
