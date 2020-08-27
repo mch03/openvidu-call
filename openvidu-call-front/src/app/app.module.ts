@@ -24,6 +24,8 @@ import { createCustomElement } from '@angular/elements';
 import { ElementZoneStrategyFactory } from 'elements-zone-strategy';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ShareModule } from 'ngx-sharebuttons';
+import { ShareButtonModule } from 'ngx-sharebuttons/button';
+import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 
 // Pipes
 import { LinkifyPipe } from './shared/pipes/linkfy';
@@ -113,7 +115,9 @@ import { StorageService } from './shared/services/storage/storage.service';
 		AppRoutingModule,
 		HttpClientModule,
 		FlexLayoutModule,
-		ShareModule
+		ShareModule,
+		ShareButtonModule,
+    ShareIconsModule
 	],
 	entryComponents: [DialogErrorComponent, WebComponentComponent],
 	providers: [
