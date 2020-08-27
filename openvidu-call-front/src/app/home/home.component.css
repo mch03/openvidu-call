@@ -2,18 +2,17 @@
   background-size: initial;
   background-position: bottom center;
   background-repeat: repeat-x;
-  background-blend-mode: overlay;
-  background-color: initial;
-  background-image: url('./../../assets/images/bg_header2016.png'),linear-gradient(180deg,rgb(202 0 41) 0%,rgb(239 24 0 / 35%) 90%);
+  background-color: #ffffff;
+  background-image: url('./../../assets/images/bg_header2016.png');
   height: 100%;
   text-align: center;
   position: relative;
-  color: #FFFFFF;
+  color: #535353;
 }
 
 #header, .footer {
   background-color: transparent;
-  color: #ffffff;
+  color: #444444;
 }
 
 .roomError{
@@ -28,7 +27,7 @@
 }
 
 .footer a {
-  color: #ffffff;
+  color: #E2E2E2;
 
 }
 #header_img {
@@ -55,7 +54,7 @@
 h4 {
   font-size: 25px;
   font-weight: 500;
-  color: #fff;
+  color: #b50034;
   position: relative;
   padding-bottom: 5px;
 }
@@ -108,11 +107,11 @@ h4 {
   min-width: 300px;
   margin: 10px auto;
   max-width: 36%;
-  background: #fff;
   padding: 6px 10px;
   position: relative;
   border-radius: 10px 5px 10px 0px;
   text-align: left;
+  background: #b50034;
 }
 
 .inputForm {
@@ -121,8 +120,8 @@ h4 {
   font-size: 17px;
   width: calc(90% - 90px);
   outline: none;
-  caret-color: #000000;
-  color: #303030;
+  caret-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .joinButton {
