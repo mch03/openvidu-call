@@ -1,7 +1,7 @@
 #header {
   color: #ffffff;
   height: 40px;
-  background-color: #4682B4;
+  background-color: #b50034;
   padding: 0 14px 0 0;
   position: absolute;
   top: 0;
@@ -55,7 +55,7 @@
 }
 
 .titleContentLight {
-  background-color: #dfdfdf !important;
+  background-color: transparent !important;
   color: #000000;
 }
 
