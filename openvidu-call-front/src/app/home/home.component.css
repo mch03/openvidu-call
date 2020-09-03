@@ -21,6 +21,8 @@
 }
 .footer {
   position: absolute;
+  background-color: #0f4c61;
+  color: #fff;
   bottom: 0;
   font-size: 9px;
   height: auto;

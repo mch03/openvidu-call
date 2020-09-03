@@ -1,7 +1,9 @@
 #videoRoomNavBar {
   min-width: 400px;
-  background-color: #494949;
+  background-color: #b50034;
   height: 100%;
+  color: #fff;
+
 }
 
 .stream-container {
@@ -46,7 +48,8 @@
 }
 
 .bounds {
-  background-color: #494949;
+  background-color: #0f4c61;
+  color: #fff;
   position: absolute;
   left: 0;
   right: 0;
@@ -57,7 +60,7 @@
 }
 
 .boundsLight {
-  background-color: #dfdfdf !important;
+  background-color: #FFF3F3 !important;
 }
 
 /*!

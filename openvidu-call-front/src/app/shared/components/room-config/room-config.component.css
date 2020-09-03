@@ -1,10 +1,11 @@
 .cardHeader {
-  background-color: #4682B4;
+  background-color: #b50034;
   border-radius: 14px 14px 0px 0px;
   text-align: center;
   height: 56px;
   padding-bottom: 5px;
   padding-top: 5px;
+  color: #fff;
   
 }
 .headerLogo{
