@@ -31,13 +31,13 @@
   align-items: center;
   justify-content: center;
   width: 450px;
-  background-color: #494949;
+  background-color: #004963;
   border-left: none;
   position: absolute;
 }
 
 .mat-drawer-container {
-  background-color: #494949;
+  background-color: #004963;
 }
 
 .sidenav-main {
