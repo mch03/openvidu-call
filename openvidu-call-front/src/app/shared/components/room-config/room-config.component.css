@@ -2,7 +2,7 @@
   background-color: #b50034;
   border-radius: 14px 14px 0px 0px;
   text-align: center;
-  height: 56px;
+  height: 69px;
   padding-bottom: 5px;
   padding-top: 5px;
   color: #fff;
@@ -101,7 +101,7 @@
 } */
 
 #header_img {
-  max-width: 150px;
+  max-width: 140px;
 }
 
 #sessionInfo {
@@ -110,12 +110,12 @@
 
 
 #joinButton {
-  margin: 15px;
-  width: 80%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color:azure;
-  background-color: rgb(34, 139, 34);
+  margin: 0px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  background-color: rgb(25, 92, 25);
 }
 
   #joinButton:hover {
@@ -179,9 +179,15 @@
   position: initial;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6c6c6c;
+  opacity: 1; /* Firefox */
+}
+
 mat-form-field,
 #nicknameForm {
   width: 100%;
+  color: #000;
 }
 
 mat-card {
@@ -987,7 +993,7 @@ mat-card {
 }
 .modal-content {
   position: relative;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #999999;

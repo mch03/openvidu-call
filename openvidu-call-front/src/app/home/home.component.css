@@ -21,7 +21,7 @@
 }
 .footer {
   position: absolute;
-  background-color: #0f4c61;
+  background-color: transparent;
   color: #fff;
   bottom: 0;
   font-size: 9px;
@@ -33,9 +33,10 @@
 
 }
 #header_img {
-  max-width: 200px;
+  max-width: 400px;
   margin-right: 10px;
   margin-top: 10px;
+  display: none;
 }
 
 .ovVersion {
@@ -122,8 +123,8 @@ h4 {
   font-size: 17px;
   width: calc(90% - 90px);
   outline: none;
-  caret-color: #FFFFFF;
-  color: #FFFFFF;
+  caret-color: grey;
+  color: lightgrey;
 background-color: transparent;
 }
 

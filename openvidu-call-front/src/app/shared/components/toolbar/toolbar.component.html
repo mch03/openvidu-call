@@ -8,41 +8,35 @@
 	fxLayoutGap="10px"
 >
 	<div fxFlex="20%">
-		<app-toolbar-logo [lightTheme]="lightTheme" [sessionId]="mySessionId" [compact]="compact" [logoUrl]="logoUrl"></app-toolbar-logo>
+		
 	</div>
 	<div fxFlex="70%" fxFlexOrder="2">
 		<div align="center" class="buttonsContainer">
-			<button
-				id="navMicrophoneButton"
-				mat-icon-button
-				(click)="toggleMicrophone()"
-				[disabled]="isConnectionLost"
-				*ngIf="hasAudioDevices && (ovSettings | hasAudio)"
-			>
+			<button id="navMicrophoneButton"
+							mat-icon-button
+							(click)="toggleMicrophone()"
+							[disabled]="isConnectionLost"
+							*ngIf="hasAudioDevices && (ovSettings | hasAudio)">
 				<mat-icon *ngIf="isWebcamAudioEnabled" matTooltip="Laita mikki pois päältä">mic</mat-icon>
 				<mat-icon *ngIf="!isWebcamAudioEnabled" color="warn" matTooltip="Laita mikki päälle">mic_off</mat-icon>
 			</button>
 
 			<!-- Camera button -->
-			<button
-				id="navCameraButton"
-				mat-icon-button
-				(click)="toggleCamera()"
-				[disabled]="isConnectionLost"
-				*ngIf="!this.ovSettings || (hasVideoDevices && (this.ovSettings | hasVideo))"
-			>
+			<button id="navCameraButton"
+							mat-icon-button
+							(click)="toggleCamera()"
+							[disabled]="isConnectionLost"
+							*ngIf="!this.ovSettings || (hasVideoDevices && (this.ovSettings | hasVideo))">
 				<mat-icon *ngIf="isWebcamVideoEnabled" matTooltip="Sammuta kamera">videocam</mat-icon>
 				<mat-icon *ngIf="!isWebcamVideoEnabled" color="warn" matTooltip="Laita kamera päälle">videocam_off</mat-icon>
 			</button>
 
 			<!-- Screenshare button -->
-			<button
-				id="navScreenButton"
-				mat-icon-button
-				(click)="toggleScreenShare()"
-				[disabled]="isConnectionLost"
-				*ngIf="ovSettings | hasScreenSharing"
-			>
+			<button id="navScreenButton"
+							mat-icon-button
+							(click)="toggleScreenShare()"
+							[disabled]="isConnectionLost"
+							*ngIf="ovSettings | hasScreenSharing">
 				<mat-icon *ngIf="!isScreenEnabled" matTooltip="Laita näytön jakaminen päälle" color="warn">stop_screen_share</mat-icon>
 				<mat-icon *ngIf="isScreenEnabled" matTooltip="Lopeta näytön jakaminen">screen_share</mat-icon>
 			</button>
@@ -52,16 +46,7 @@
 				<mat-icon matTooltip="Näytä koko näytössä">{{ fullscreenIcon }}</mat-icon>
 			</button>
 
-			<!-- Automatic / grid layout button -->
-			<button
-				mat-icon-button
-				(click)="toggleSpeakerLayout()"
-				[disabled]="isConnectionLost"
-				*ngIf="ovSettings | hasLayoutSpeaking"
-			>
-				<mat-icon matTooltip="Aktiivinen puhuja korostettuna" color="warn" *ngIf="!isAutoLayout">voice_over_off</mat-icon>
-				<mat-icon matTooltip="Aktiivinen puhuja samanarvoiseksi" *ngIf="isAutoLayout">record_voice_over</mat-icon>
-			</button>
+
 
 			<!-- Leave seassion button -->
 			<button mat-icon-button (click)="leaveSession()" id="navLeaveButton" *ngIf="ovSettings | hasExit">
@@ -69,12 +54,25 @@
 			</button>
 
 			<!-- Share buttons and copy to clipboard -->
-
-      <button shareButton="whatsapp" mat-icon-button><img src="/assets/images/whatsapp_icon.png" alt="Jaa whatsapp ohjelmalla" width="22" height="22" /></button>
-      <button shareButton="messenger" mat-icon-button><img src="/assets/images/messenger.png" alt="Jaa messenger ohjelmalla" width="22" height="22" /></button>
-      <button shareButton="sms" mat-icon-button><img src="/assets/images/sms.png" alt="Jaa tekstiviestinä" width="22" height="22" /></button>
-      <button shareButton="email" mat-icon-button><img src="/assets/images/email.png" alt="Jaa sähköposti ohjelmalla" width="22" height="22" /></button>
-			<button shareButton="copy" mat-icon-button><img src="/assets/images/share.png" alt="Kopioi" width="22" height="22" /></button>
+			<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Lisää toimintoja">
+				<mat-icon>more_vert</mat-icon>
+			</button>
+			<mat-menu #menu="matMenu">
+				<button shareButton="whatsapp" mat-icon-button mat-menu-item><img src="/assets/images/whatsapp_icon.png" alt="Jaa whatsapp ohjelmalla" width="22" height="22" /></button>
+				<button shareButton="messenger" mat-icon-button mat-menu-item><img src="/assets/images/messenger.png" alt="Jaa messenger ohjelmalla" width="22" height="22" /></button>
+				<button shareButton="sms" mat-icon-button mat-menu-item><img src="/assets/images/sms.png" alt="Jaa tekstiviestinä" width="22" height="22" /></button>
+				<button shareButton="email" mat-icon-button mat-menu-item><img src="/assets/images/email.png" alt="Jaa sähköposti ohjelmalla" width="22" height="22" /></button>
+				<button shareButton="copy" mat-icon-button mat-menu-item><img src="/assets/images/share.png" alt="Kopioi" width="22" height="22" /></button>
+				<span style="flex: 1 1 auto;"></span>
+				<!-- Automatic / grid layout button -->
+				<button mat-icon-button mat-menu-item
+								(click)="toggleSpeakerLayout()"
+								[disabled]="isConnectionLost"
+								*ngIf="ovSettings | hasLayoutSpeaking">
+					<mat-icon matTooltip="Aktiivinen puhuja korostettuna" color="warn" *ngIf="!isAutoLayout">voice_over_off</mat-icon>
+					<mat-icon matTooltip="Aktiivinen puhuja samanarvoiseksi" *ngIf="isAutoLayout">record_voice_over</mat-icon>
+				</button>
+			</mat-menu>
 
 		</div>
 	</div>
