@@ -54,7 +54,20 @@
 			</button>
 
 			<!-- oma valikko -->
-			<app-toolbar-logo [lightTheme]="lightTheme" [sessionId]="mySessionId" [compact]="compact" [logoUrl]="logoUrl"></app-toolbar-logo>
+			<button shareButton="whatsapp" mat-icon-button><img src="/assets/images/whatsapp_icon.png" alt="Jaa whatsapp ohjelmalla" width="22" height="22" /></button>
+			<button shareButton="messenger" mat-icon-button><img src="/assets/images/messenger.png" alt="Jaa messenger ohjelmalla" width="22" height="22" /></button>
+			<button shareButton="sms" mat-icon-button><img src="/assets/images/sms.png" alt="Jaa tekstiviestinä" width="22" height="22" /></button>
+			<button shareButton="email" mat-icon-button><img src="/assets/images/email.png" alt="Jaa sähköposti ohjelmalla" width="22" height="22" /></button>
+			<button shareButton="copy" mat-icon-button><img src="/assets/images/share.png" alt="Kopioi" width="22" height="22" /></button>
+			<span style="flex: 1 1 auto;"></span>
+			<!-- Automatic / grid layout button -->
+			<button mat-icon-button
+							(click)="toggleSpeakerLayout()"
+							[disabled]="isConnectionLost"
+							*ngIf="ovSettings | hasLayoutSpeaking">
+				<mat-icon matTooltip="Aktiivinen puhuja korostettuna" color="warn" *ngIf="!isAutoLayout">voice_over_off</mat-icon>
+				<mat-icon matTooltip="Aktiivinen puhuja samanarvoiseksi" *ngIf="isAutoLayout">record_voice_over</mat-icon>
+			</button>
 
 
 		</div>
