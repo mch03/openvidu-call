@@ -114,8 +114,7 @@ import { StorageService } from './shared/services/storage/storage.service';
 		AppRoutingModule,
 		HttpClientModule,
 		FlexLayoutModule,
-		ShareModule,
-		MatMenuModule
+		ShareModule
 	],
 	entryComponents: [DialogErrorComponent, WebComponentComponent],
 	providers: [
