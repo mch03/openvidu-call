@@ -1,7 +1,7 @@
 #header {
   color: #ffffff;
-  height: 40px;
-  background-color: #b50034;
+  height: 44px;
+  background-color: transparent;
   padding: 0 14px 0 0;
   position: absolute;
   top: 0;
@@ -50,7 +50,7 @@
 }
 
 .titleContentDark {
-  background-color: #b50034;
+  background-color: transparent;
   color: #ffffff;
 }
 

@@ -54,40 +54,11 @@
 					</div>
 				</div>
 
-				<div class="avatarButton" *ngIf="hasVideoDevices">
-					<button mat-stroked-button (click)="takePhoto()">
-						<mat-icon matTooltip="Ota profiilikuva">photo_camera</mat-icon>
-						<span style="margin-left: 5px;">Tallenna profiilikuva</span>
-					</button>
-				</div>
+
 			</div>
 
 			<div class="col-sm-6 col-md-6 col-lg-6 rightSection">
-				<div class="avatarContainer" *ngIf="hasVideoDevices">
-					<h3>Profiilikuva</h3>
 
-				</div>
-
-
-				<div fxLayout="row" fxFill id="avatarSection" *ngIf="hasVideoDevices">
-
-					<div class="" fxFlex="100" fxLayoutAlign="center center">
-
-
-						<div
-							id="avatarContainer"
-							(click)="setAvatar('video')"
-							[style.background]="avatarSelected === 'video' ? 'lightgreen' : 'transparent'"
-						>
-							<div id="imgText" *ngIf="!videoAvatar">
-								<span>Profiilikuva puuttuu</span>
-							</div>
-							<img id="avatarImg" *ngIf="videoAvatar" [src]="videoAvatar" />
-						</div>
-
-					</div>
-
-				</div>
 
 				<!-- Devices section / Nickname-->
 				<div fxLayout="row" fxFill id="devicesSection">
@@ -205,7 +176,7 @@
 
         <!-- Modal footer -->
         <div class="modal-footer" style="justify-content: center">
-			<button mat-flat-button color="primary" (click)="joinSession()" form="nicknameForm" id="joinButton">Siirry kokoustilaan</button>
+			<button mat-flat-button color="primary" (click)="joinSession()" form="nicknameForm" id="joinButton">Siirry videotapaamiseen</button>
 
         </div>
 

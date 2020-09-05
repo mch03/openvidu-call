@@ -1,5 +1,5 @@
 .cardHeader {
-  background-color: #b50034;
+  background-color: #036fa9;
   border-radius: 14px 14px 0px 0px;
   text-align: center;
   height: 56px;
@@ -111,10 +111,13 @@
 
 #joinButton {
   margin: 15px;
-  width: 80%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color:azure;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  transform: scale(1.03);
+  transform-origin: center;
+  margin-bottom: 12px !important;
+  color:#fff;
   background-color: rgb(34, 139, 34);
 }
 
