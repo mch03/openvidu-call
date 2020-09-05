@@ -1,7 +1,7 @@
 <div class="section1">
 	<mat-toolbar id="header">
 		<a href="https://hybridmedia.fi/" target="_blank">
-			<img id="header_img" alt="OpenVidu Logo" src="assets/images/openvidu_logo.png" />
+			<img id="header_img" alt="Hyme Logo" src="https://hybridmedia.fi/materiaalia/hyme/hyme_header_logo.png" />
 		</a>
 		<div class="ovVersion">
 			<span>{{ version }}</span>
@@ -9,9 +9,8 @@
 	</mat-toolbar>
 	<div class="container">
 		<div class="ovInfo">
-			<img class="ovLogo" alt="OpenVidu Logo" src="assets/images/openvidu_vert_white_bg_trans_cropped.png" />
+			<img class="ovLogo" alt="OpenVidu Logo" src="https://hybridmedia.fi/materiaalia/hyme/hyme_iso.png" />
 			<h4>Videotapaaminen</h4>
-			<h4>Realiaikanen. Yksinkertaisesti toimiva.</h4>
 		</div>
 		<div class="formContainer">
 			<div class="roomError" id="requiredNameError" *ngIf="roomForm.hasError('required')">
@@ -23,7 +22,7 @@
 			<form [formGroup]="roomForm" novalidate (ngSubmit)="goToVideoCall()">
 				<div class="joinForm">
 					<input matInput class="inputForm" type="text" [formControl]="roomForm"  autocomplete="off" id="roomInput" />
-					<button type="submit" class="joinButton" id="joinButton" >ALOITA</button>
+					<button type="submit" class="joinButtonOne" id="joinButton" >ALOITA</button>
 				</div>
 			</form>
 		</div>

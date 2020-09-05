@@ -34,7 +34,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 	private chatServiceSubscription: Subscription;
 
 	fullscreenIcon = VideoFullscreenIcon.BIG;
-	logoUrl = 'https://hybridmedia.fi/materiaalia/';
+	logoUrl = 'https://hybridmedia.fi/materiaalia/hyme/';
 
 	participantsNames: string[] = [];
 

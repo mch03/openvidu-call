@@ -4,13 +4,13 @@
     "\\openvidu-call-front",
     "\\openvidu-call-front\\src",
     "\\openvidu-call-front\\src\\app",
-    "\\openvidu-call-front\\src\\app\\home",
     "\\openvidu-call-front\\src\\app\\shared",
     "\\openvidu-call-front\\src\\app\\shared\\components",
-    "\\openvidu-call-front\\src\\app\\shared\\components\\room-config",
+    "\\openvidu-call-front\\src\\app\\shared\\components\\footer",
     "\\openvidu-call-front\\src\\app\\shared\\components\\toolbar",
+    "\\openvidu-call-front\\src\\app\\video-room",
     "\\openvidu-call-front\\src\\environments"
   ],
-  "SelectedNode": "\\openvidu-call-front\\src\\theme.scss",
+  "SelectedNode": "\\openvidu-call-front\\src\\app\\shared\\components\\toolbar\\toolbar.component.ts",
   "PreviewInSolutionExplorer": false
 }

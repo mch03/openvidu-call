@@ -112,7 +112,7 @@ span.triangle {
 
 .message.left .user-img {
   left: -5px;
-  border: 1px solid #f0f0f094;
+  border: 1px solid #85AFD8;
 }
 
 .message.left .msg-detail .msg-content {
@@ -135,15 +135,15 @@ span.triangle {
 }
 .message.right .user-img {
   right: -5px;
-  border: 1px solid #c8ffe8ab;
+  border: 1px solid #85AFD8;
 }
 
 .message.right .msg-detail .msg-content {
-  background-color: #c8ffe8;
+  background-color: #038244;
   float: right;
 }
 .message.right .msg-detail .msg-content span.triangle {
-  background-color: #c8ffe8;
+  background-color: #038244;
   border-bottom-width: 0;
   border-left-width: 0;
   right: -5px;
@@ -172,13 +172,13 @@ span.triangle {
 }
 
 #sendButton {
-  background-color: #81e9b0;
+  background-color: #228B22;
   position: absolute;
   right: 10px;
   top: 0;
   bottom: 0;
   margin: auto;
-  border: 1px solid #7ae2a9;
+  border: 1px solid #228B22;
   box-shadow: none !important;
 }
 #sendButton mat-icon {
