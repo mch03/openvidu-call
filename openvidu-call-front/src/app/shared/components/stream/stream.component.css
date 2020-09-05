@@ -130,7 +130,8 @@ mat-error,
 }
 
 input {
-  caret-color: #ffffff !important;
+  caret-color: #797979 !important;
+  color: #000000;
 }
 
 .poster_img {

@@ -60,10 +60,10 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 
 	ngOnInit() {
 		if (this.lightTheme) {
-			this.logoUrl += 'kc_logo.png';
+			this.logoUrl += 'hyme_logo.png';
 			return;
 		}
-		this.logoUrl += 'kc_logo.png';
+		this.logoUrl += 'hyme_logo.png';
 	}
 
 	toggleMicrophone() {
