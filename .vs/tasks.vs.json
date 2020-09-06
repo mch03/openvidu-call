@@ -5,6 +5,11 @@
       "taskLabel": "task-app",
       "appliesTo": "openvidu-call-front/src/app/",
       "type": "launch"
+    },
+    {
+      "taskLabel": "task-ci",
+      "appliesTo": ".github/workflows/ci.yml",
+      "type": "launch"
     }
   ]
 }
