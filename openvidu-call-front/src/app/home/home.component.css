@@ -3,11 +3,11 @@
   background-position: bottom center;
   background-repeat: repeat-x;
   background-color: #ffffff;
-  background-image: url('https://hybridmedia.fi/materiaalia/hyme/hyme_tausta.jpg');
+  background-image: url('https://hybridmedia.fi/materiaalia/kpmg/kpmg_bg.jpg');
   height: 100%;
   text-align: center;
   position: relative;
-  color: #969696;
+  color: #fff;
 }
 
 #header, .footer {
@@ -17,7 +17,7 @@
 
 .roomError{
   font-size: 16px;
-  color: #c01515;
+  color: #c01515;                     
 }
 .footer {
   position: absolute;
