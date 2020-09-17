@@ -1,16 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\docker",
-    "\\openvidu-call-front",
-    "\\openvidu-call-front\\src",
-    "\\openvidu-call-front\\src\\app",
-    "\\openvidu-call-front\\src\\app\\shared",
-    "\\openvidu-call-front\\src\\app\\shared\\components",
-    "\\openvidu-call-front\\src\\app\\shared\\components\\chat",
-    "\\openvidu-call-front\\src\\assets",
-    "\\openvidu-call-front\\src\\assets\\images"
+    ""
   ],
-  "SelectedNode": "\\openvidu-call-front\\src\\assets\\images",
+  "SelectedNode": "\\.github",
   "PreviewInSolutionExplorer": false
 }

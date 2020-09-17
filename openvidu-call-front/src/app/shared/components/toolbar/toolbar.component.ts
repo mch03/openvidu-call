@@ -34,7 +34,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 	private chatServiceSubscription: Subscription;
 
 	fullscreenIcon = VideoFullscreenIcon.BIG;
-	logoUrl = 'https://hybridmedia.fi/materiaalia/hyme/';
+	logoUrl = 'https://hybridmedia.fi/materiaalia/kpmg/';
 
 	participantsNames: string[] = [];
 
@@ -60,10 +60,10 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 
 	ngOnInit() {
 		if (this.lightTheme) {
-			this.logoUrl += 'hyme_logo.png';
+			this.logoUrl += 'kpmg_logo.png';
 			return;
 		}
-		this.logoUrl += 'hyme_logo.png';
+		this.logoUrl += 'kpmg_logo.png';
 	}
 
 	toggleMicrophone() {

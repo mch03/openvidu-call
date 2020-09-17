@@ -19,8 +19,8 @@
 				[disabled]="isConnectionLost"
 				*ngIf="hasAudioDevices && (ovSettings | hasAudio)"
 			>
-				<mat-icon *ngIf="isWebcamAudioEnabled" matTooltip="Laita mikki pois päältä">mic</mat-icon>
-				<mat-icon *ngIf="!isWebcamAudioEnabled" color="warn" matTooltip="Laita mikki päälle">mic_off</mat-icon>
+				<mat-icon *ngIf="isWebcamAudioEnabled" matTooltip="Mykistä oma äänesi">mic</mat-icon>
+				<mat-icon *ngIf="!isWebcamAudioEnabled" color="warn" matTooltip="Jaa oma äänesi">mic_off</mat-icon>
 			</button>
 
 			<!-- Camera button -->
@@ -32,7 +32,7 @@
 				*ngIf="!this.ovSettings || (hasVideoDevices && (this.ovSettings | hasVideo))"
 			>
 				<mat-icon *ngIf="isWebcamVideoEnabled" matTooltip="Sammuta kamera">videocam</mat-icon>
-				<mat-icon *ngIf="!isWebcamVideoEnabled" color="warn" matTooltip="Laita kamera päälle">videocam_off</mat-icon>
+				<mat-icon *ngIf="!isWebcamVideoEnabled" color="warn" matTooltip="Jaa kamerasi kuva">videocam_off</mat-icon>
 			</button>
 
 			<!-- Screenshare button -->
@@ -43,7 +43,7 @@
 				[disabled]="isConnectionLost"
 				*ngIf="ovSettings | hasScreenSharing"
 			>
-				<mat-icon *ngIf="!isScreenEnabled" matTooltip="Laita näytön jakaminen päälle" color="warn">stop_screen_share</mat-icon>
+				<mat-icon *ngIf="!isScreenEnabled" matTooltip="Aloita näytön jakaminen" color="warn">stop_screen_share</mat-icon>
 				<mat-icon *ngIf="isScreenEnabled" matTooltip="Lopeta näytön jakaminen">screen_share</mat-icon>
 			</button>
 
@@ -60,7 +60,7 @@
 				*ngIf="ovSettings | hasLayoutSpeaking"
 			>
 				<mat-icon matTooltip="Korosta aktiivinen puhuja" color="warn" *ngIf="!isAutoLayout">voice_over_off</mat-icon>
-				<mat-icon matTooltip="Korostaminen pois päältä" *ngIf="isAutoLayout">record_voice_over</mat-icon>
+				<mat-icon matTooltip="Ruudukkonäkymä" *ngIf="isAutoLayout">record_voice_over</mat-icon>
 			</button>
 
 			<!-- Leave seassion button -->
@@ -68,15 +68,16 @@
 				<mat-icon color="warn" matTooltip="Sulje yhteys">power_settings_new</mat-icon>
 			</button>
 
-			<!-- Share buttons and copy to clipboard -->
-			<span style="padding-left: 15px;"> </span>
-      <button shareButton="whatsapp" mat-icon-button><img src="https://hybridmedia.fi/materiaalia/hyme/whatsapp_icon.png" alt="Lähetä linkki whatsapp ohjelmalla" width="22" height="22" /></button>
-      <button shareButton="email" mat-icon-button><img src="https://hybridmedia.fi/materiaalia/hyme/email.png" alt="Lähetä linkki sähköpostiohjelmalla" width="22" height="22" /></button>
-			<button shareButton="copy" mat-icon-button><img src="https://hybridmedia.fi/materiaalia/hyme/copy.png" alt="Kopioi linkki" width="22" height="22" /></button>
+			
 
 		</div>
 	</div>
 	<div fxFlex="10%" fxFlexOrder="3" align="end">
+    <!-- Share buttons and copy to clipboard -->	
+    <button shareButton="whatsapp" mat-icon-button matTooltip="Kutsu Whatsapp viestillä"><img src="https://hybridmedia.fi/materiaalia/kpmg/whatsapp_icon.png" alt="Lähetä linkki whatsapp ohjelmalla" width="22" height="22" /></button>
+    <button shareButton="email" mat-icon-button matTooltip="Kutsu käyttäen sähköpostiohjelmaasi"><img src="https://hybridmedia.fi/materiaalia/kpmg/email.png" alt="Lähetä linkki sähköpostiohjelmalla" width="22" height="22" /></button>
+    <button shareButton="copy" mat-icon-button matTooltip="Kopioi kutsu linkki videotapaamiseen"><img src="https://hybridmedia.fi/materiaalia/kpmg/copy.png" alt="Kopioi linkki" width="22" height="22" /></button>
+		<span style="padding-left: 25px;"> </span>
 		<button mat-icon-button (click)="toggleChat()" [disabled]="isConnectionLost" *ngIf="ovSettings | hasChat">
 			<mat-icon
 				matBadge="{{ newMessagesNum }}"

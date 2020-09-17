@@ -3,19 +3,19 @@ import { FormBuilder, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 // import { uniqueNamesGenerator, adjectives, colors, animals } from 'unique-names-generator';
 
-import { uniqueNamesGenerator, NumberDictionary, colors, animals } from 'unique-names-generator';
+import { uniqueNamesGenerator, NumberDictionary, colors, starWars } from 'unique-names-generator';
  
 const KattoTeema = [
-  'Pelti',
-  'Tiili',
-  'Huopa',
-  'Lukkosauma',
-	'Konesauma',
-	'Katto',
-	'Kattoremontti',
-	'Tasakatto',
-	'Alumiinipeltikatto',
-	'Kattopinnoite'
+  'Kokoustila',
+  'Videokokous',
+  'Automaattinen',
+  'Innovatiivinen',
+	'Palveleva',
+	'Hyme',
+	'Hybrid',
+	'Media',
+	'KC',
+	'Meeting'
 ];
 
 
@@ -33,8 +33,8 @@ export class HomeComponent implements OnInit {
 
 	ngOnInit() {
     const numberDictionary = NumberDictionary.generate({ min: 100, max: 999 });
-		const randomName = uniqueNamesGenerator({ dictionaries: [colors, animals, numberDictionary], length: 3, separator: '-', style: 'capital' });
-		this.roomForm = new FormControl(randomName, [Validators.minLength(3), Validators.required]);
+		const randomName = uniqueNamesGenerator({ dictionaries: [KattoTeema, colors, starWars, numberDictionary], length: 4, separator: '-', style: 'capital' });
+		this.roomForm = new FormControl(randomName, [Validators.minLength(4), Validators.required]);
 	}
 
 	public goToVideoCall() {
