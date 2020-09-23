@@ -1,7 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\openvidu-call-front",
+    "\\openvidu-call-front\\src",
+    "\\openvidu-call-front\\src\\app",
+    "\\openvidu-call-front\\src\\app\\shared",
+    "\\openvidu-call-front\\src\\app\\shared\\components",
+    "\\openvidu-call-front\\src\\app\\shared\\components\\room-config",
+    "\\openvidu-call-front\\src\\app\\shared\\layout",
+    "\\openvidu-call-front\\src\\app\\shared\\models",
+    "\\openvidu-call-front\\src\\app\\shared\\services",
+    "\\openvidu-call-front\\src\\app\\shared\\services\\utils"
   ],
-  "SelectedNode": "\\.github",
+  "SelectedNode": "\\openvidu-call-front\\src\\styles.css",
   "PreviewInSolutionExplorer": false
 }
